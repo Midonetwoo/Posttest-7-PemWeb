@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     font-family: "inter", sans-serif;
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+}
+
+a:hover{
+     font-weight: bold;
+     color: #458483;
+}
+
+a img:hover{
+     transform: scale(1.03);
+}
+
+header img{
+     max-width: 100%;
+     background-color: #141619;
+     height: auto;
+     z-index: 1;
+}
+
+.gambarheader{
+     position: relative;
+     background-attachment: fixed;
+     z-index: -1;
+}
+
+section{
+     background-image: var(--backround-color);
+}
+
+nav{
+     top: 0;
+     position: sticky;
+     display: flex;
+     background-color: var(--nav-color);
+     justify-content: space-around;
+     box-sizing: border-box;
+     align-items: center;
+     overflow: hidden;
+}
+
+nav p{
+     color: var(--text-color);
+     cursor: pointer;
+}
+
+nav p:hover{
+     font-weight: bold;
+}
+
+nav img{
+     width: 20%;
+     background-color: var(--nav-color);
+}
+
+.items{
+     display: flex;
+     background-color: var(--nav-color);
+}
+
+.items a{
+     padding: 0px 30px;
+     color: var(--text-color);
+     font-size: 18px;
+}
+
+.daftar a{
+     color: var(--text-color);
+}
+
+.welcome{
+     padding: 60px 60px;
+     font-size: 300%;
+     color: var(--text-color);
+     font-weight: 500;
+     z-index: 2;
+}
+
+.weAre p{
+     color:var(--text-color);
+     padding: 20px 60px 20px 60px;
+     font-size: 20px;
+}
+
+.why{
+     background-image: var(--section-color);
+     padding: 60px;
+}
+
+.why img{
+     width: 100%;
+}
+
+.why .atas{
+     font-size: 40px;
+     text-align: center;
+     padding: 20px;
+     color: aliceblue;
+     padding: 30px 60px;
+}
+.why .atas:hover{
+     font-weight: bold;
+     cursor: pointer;
+}
+.why .bawah{
+     color: aliceblue;
+     padding: 0px 60px;
+}
+#hidden{
+     display: none;
+}
+
+.product{
+     color: var(--text-color);
+}
+
+.product .atas{
+     font-size: 50px;
+     text-align: center;
+     padding: 20px;
+     font-weight: 600;
+}
+.product .bawah{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.product img{
+     width: 400px;
+}
+
+footer{
+     background-color: var(--footer-color);
+     display: flex;
+     flex-direction: column;
+}
+
+footer .logo img{
+     width: 40%;
+}
+
+footer .sosmed{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+footer .sosmed img{
+     width: 80px;
+     padding: 10px 0px;
+}
+
+footer p{
+     color: var(--text-color);
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+footer .contactus .atas{
+     font-size: 30px;
+     padding: 10px;
+}
+
+footer .contactus .bawah{
+     font-size: 15px;
+     padding: 10px;
+}
+
+footer .copyright{
+     padding: 10px;
+     
+}
+
+.foto img{
+     width: 300px;
+     padding-right: 60px;
+}
+
+.about{
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.nama{
+     color: var(--text-color);
+     font-size: 40px;
+     padding: 20px 0px;
+}
+.keterangan{
+     color:var(--text-color)
+}
+.mode{
+     margin:10px;
+     width: 60px;
+     cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+     nav{
+          text-align: left;
+          align-items: left;
+          display: block;
+          flex-direction: column;
+          padding: 0px 0px 20px;
+          position: relative;
+     }
+     nav img{
+          width: 0%;
+     }
+     .items{
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+     }
+     .items a{
+          padding: 4px 60px;
+     }
+     nav .daftar{
+          padding: 4px 60px;
+     }
+     .welcome{
+          font-size: 200%;
+          padding: 20px 60px
+     }
+     .foto img{
+          width: 80%;
+     }
+     
+     .about{
+          padding: 20px 60px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+     
+     .nama{
+          color: aliceblue;
+          font-size: 20px;
+          padding: 5px 0px;
+     }
+     .keterangan{
+          color:aliceblue
+     }
+}
+
+#theme{
+     width: 130px;
+}
+
+#theme img:hover{
+     transform: scale(1.05);
+}
+
+
+:root {
+     --primary-color: #141619;
+     --text-color: aliceblue;
+     --backround-color: linear-gradient(to bottom, #141619 50%, #010101);
+     --nav-color: #141619;
+     --section-color: linear-gradient(to top,#458483,#1f2e30ed);
+     --footer-color:#141619;
+}
+
+.lightmode{    
+     --primary-color: aliceblue;
+     --text-color: #141619;
+     --backround-color: linear-gradient(to bottom, rgb(255, 255, 255) 50%,rgb(208, 208, 208));
+     --nav-color: rgb(255, 255, 255);
+     --section-color: linear-gradient(to left,#006449,#0398b9);
+     --footer-color:#e6e6e6;
+}
+
+.product .cpet{
+     display: none;
+     cursor: pointer;
+}
+.chome{
+     display: block;
+}
+.health{
+     display: block;
+}
+
+.comingsoon{
+     text-align: center;
+     font-weight: bold;
+     font-size: 50px;
+     padding: 200px 60px;
+     position: absolute;
+     display: none;
+}    
+
+
+section form{
+     padding: 30px 30%;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+}
+
+section form label{
+     padding: 5px;
+}
+
+section form input{
+     height: 40px;
+     padding: 20px;
+     font-size: 15px;
+}
+
+section button{
+     padding: 10px;
+     /* margin: 20px 200px; */
+}
+
+.add_photo{
+     color: var(--text-color);
+}
+
+.tambahfoto{
+     display: flex;
+     align-items: center;
+     color:var(--text-color);    
+}
+
+.namalengkap{
+     display: flex;
+     margin-left: -10px;
+}
+
+.SignUp{
+     color: var(--text-color)
+}
+
+section .isi{
+     display: flex;
+     flex-direction: column;
+     color: var(--text-color);
+     font-size: 20px;
+     align-items: start;
+     padding: 20px;
+}
+
+section .SignUp{
+     font-weight: bold;
+     font-size: 50px;
+     text-align: center;
+     color: var(--text-color);
+}
+
+.sectiontampil{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+section .form label{
+     color: var(--text-color);
+}
+
+section .form{
+     padding: 300px 0px;
+}
+
+.welcomeback{
+     color: var(--text-color);
+     padding: 20px 0px;
+     font-size: 45px;
+     
+}
+
+.form-container{
+     height: 400px;
+
+}
+
+.dashboard_atas{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+}
+
+.dashboard_atas h1{
+     color: var(--text-color);
+     font-size: 50px;
+     margin: 0px 10%;
+}
+
+.tabel_dashboard{
+     border: 3px solid var(--text-color);
+     width: 80%;
+     align-content: center;
+     border-collapse: collapse;
+     margin: 0px 10% 0px 10%;
+     padding-bottom: 60px;
+}
+
+.tabel_dashboard th, td{
+     border: 2px solid aliceblue;
+     color: var(--text-color);
+     /* background-color: #010101; */
+}
+
+.tabel_dashboard .action{
+     display: flex;
+}
+
+.tabel_dashboard .action a{
+     width: 50px;
+}
+
+.tabel_dashboard .action a{
+     width: 50px;
+}
+.tabel_dashboard tbody tr td{
+     text-align: center;
+}
+
+.edit-btn{
+     border-radius: 5px;
+     border-color: aliceblue;
+     margin: 10px 10px;
+     background-color: #141619;
+}
+
+.delete-btn{
+     border-radius: 5px;
+     border-color: aliceblue;
+     margin: 10px 10px;
+     background-color: #141619;
+}
+
+.formtambah{
+     align-content: center;
+}
+.add-form-container{
+     color: var(--text-color);
+     height: 1000px;
+     padding: 200px 5%;
+}
+
+.add-form-container h1{
+     text-align: center;
+     padding-top: 50px;
+}
+
+.login-btn{
+     padding-top: 10px;
+     margin-top: 30px;
+}
+
+.tanggal{
+     color: var(--text-color);
+}
+
+.loginsignup{
+     color: var(--text-color);
+     display: flex;
+     justify-content: center;
+     padding: 20px 0px 0px 0px;
+     align-items: center;   
+     gap: 20px;  
+}
+
+.loginsignup a, button{
+     text-align: center;
+}
+
+
+.loginsignup button{
+     width: 100%;
+}
+.loginsignup a{
+     width: 50%;
+     color: var(--text-color);
+}
+.regis-btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 20px;
+     font-size: larger;
+     color: var(--text-color);
+}
+.password_salah{
+     display: flex;
+     justify-content: center;
+     margin: 10px 0px -10px 0px;
+}
+.regis-text{
+     text-align: center;
+     color: var(--text-color);
+}

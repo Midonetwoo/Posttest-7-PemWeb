@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     font-family: "inter", sans-serif;
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+}
+
+a:hover{
+     font-weight: bold;
+     color: #458483;
+}
+body{
+     background-color: #141619;
+}
+
+section form{
+     padding: 30px 30%;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     color: aliceblue;
+     justify-content: center;
+}
+
+section form label{
+     padding: 5px;
+}
+
+section form input{
+     height: 40px;
+     padding: 20px;
+     font-size: 15px;
+     border-radius: 5px;
+}
+
+section button{
+     padding: 10px;
+     margin: 20px 200px;
+}
+section p{
+     color: aliceblue;
+     text-align: center;
+     padding-top: 200px;
+     font-size: 50px;
+}
+
+section a{
+     justify-content: center;
+}
+
+.kembali{
+     align-items: center;
+     color: aliceblue;
+     padding: 0px 10%;
+}
+
+section button:hover{
+     background-color: grey;
+}
